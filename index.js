@@ -11,8 +11,8 @@ function createEmployeeRecord(array){
     }
 }
  function createEmployeeRecords(Array){
-   return Array.map(function(row){
-       return createEmployeeRecord(row)
+   return Array.map(function(array){
+       return createEmployeeRecord(array)
      })
  }
 /*
