@@ -11,7 +11,9 @@ function createEmployeeRecord(array){
     }
 }
  function createEmployeeRecords(Array){
-
+   return Array.map(function(row){
+       return createEmployeeRecord(row)
+     })
  }
 /*
  We're giving you this function. Take a look at it, you might see some usage
