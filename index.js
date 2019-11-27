@@ -15,11 +15,7 @@ function  createEmployees (employeeRowData) {
         return createEmployeeRecord(row)
     })
 }
- function createEmployeeRecords(Array){
-   return Array.map(function(array){
-       return createEmployeeRecord(array)
-     })
- }
+ 
 
  function createTimeInEvent(dateStemp){
    let [date, hour] = dateStemp.split(' ')
