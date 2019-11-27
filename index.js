@@ -32,7 +32,7 @@ function createEmployeeRecord(array){
    let [date, hour] = dateStemp.split(' ')
 
        this.timeInEvents.push({
-           type: "TimeIn",
+           type: "TimeOut",
            hour: parseInt(hour, 10),
            date,
        })
