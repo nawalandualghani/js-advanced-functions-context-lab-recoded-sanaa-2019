@@ -50,6 +50,12 @@ function createEmployeeRecord(array){
     return parseFloat(rawWage.toString())
  }
 
+  function findEmployeebyFirstName(srcArray, firstName) {
+  return srcArray.find(function(rec){
+    return rec.firstName === firstName
+  })
+}
+
 /*
  We're giving you this function. Take a look at it, you might see some usage
  that's new and different. That's because we're avoiding a well-known, but
