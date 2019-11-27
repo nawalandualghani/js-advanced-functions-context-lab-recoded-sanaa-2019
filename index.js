@@ -36,7 +36,7 @@ function  createEmployees (employeeRowData) {
  function createTimeOutEvent(dateStemp){
    let [date, hour] = dateStemp.split(' ')
 
-       this.timeInEvents.push({
+       this.timeOutEvents.push({
            type: "TimeOut",
            hour: parseInt(hour, 10),
            date,
