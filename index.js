@@ -10,7 +10,7 @@ function createEmployeeRecord(array){
         timeOutEvents: []
     }
 }
- function createEmployeeRecords(){
+ function createEmployeeRecords(Array){
 
  }
 /*
