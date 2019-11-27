@@ -39,11 +39,17 @@ function createEmployeeRecord(array){
 
        return this
  }
- function hoursWorkedOnDate(soughtDate){
-   let inEvent = this.timeInEvents.find(function(e){
-         return e.date === soughtDate
-     })
- }
+ function hoursWorkedOnDate (soughtDate){
+    let inEvent = this.timeInEvents.find(function(e){
+        return e.date === soughtDate
+    })
+
+    let outEvent = this.timeOutEvents.find(function(e){
+        return e.date === soughtDate
+    })
+
+    return (outEvent.hour - inEvent.hour) / 100
+}
 
  function wagesEarnedOnDate(dateSought){
    let rawWage = hoursWorkedOnDate.call(this, dateSought) * this.payPerHour
