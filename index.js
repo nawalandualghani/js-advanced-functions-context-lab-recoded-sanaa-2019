@@ -46,8 +46,7 @@ function createEmployeeRecord(array){
  }
 
  function wagesEarnedOnDate(dateSought){
-   let rawWage = hoursWorkedOnDate.call(this, dateSought)
-        * this.payPerHour
+   let rawWage = hoursWorkedOnDate.call(this, dateSought) * this.payPerHour
     return parseFloat(rawWage.toString())
  }
 /*
