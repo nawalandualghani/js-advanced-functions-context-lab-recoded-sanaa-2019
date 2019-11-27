@@ -28,8 +28,16 @@ function createEmployeeRecord(array){
        return this
  }
 
- function createTimeOutEvent(){
+ function createTimeOutEvent(dateStemp){
+   let [date, hour] = dateStemp.split(' ')
 
+       this.timeInEvents.push({
+           type: "TimeIn",
+           hour: parseInt(hour, 10),
+           date,
+       })
+
+       return this
  }
 /*
  We're giving you this function. Take a look at it, you might see some usage
