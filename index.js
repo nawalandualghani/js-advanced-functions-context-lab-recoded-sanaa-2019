@@ -1,11 +1,11 @@
 /* Your Code Here */
 
-function createEmployeeRecord(row){
+function createEmployeeRecord(array){
     return {
-        firstName: row[0],
-        familyName: row[1],
-        title: row[2],
-        payPerHour: row[3],
+        firstName: array[0],
+        familyName: array[1],
+        title: array[2],
+        payPerHour: array[3],
         timeInEvents: [],
         timeOutEvents: []
     }
