@@ -16,8 +16,16 @@ function createEmployeeRecord(array){
      })
  }
 
- function createTimeInEvent(){
-
+ function createTimeInEvent(dateStemp){
+   let [date, hour] = dateStamp.split(' ')
+   
+       this.timeInEvents.push({
+           type: "TimeIn",
+           hour: parseInt(hour, 10),
+           date,
+       })
+   
+       return this
  }
 /*
  We're giving you this function. Take a look at it, you might see some usage
